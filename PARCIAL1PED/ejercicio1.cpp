@@ -13,6 +13,5 @@ strrev(cadena);
 
 cout << "\nLa cadena invertida es: " << cadena << "\n\n";
 
-system("pause");
 return 0;
 }

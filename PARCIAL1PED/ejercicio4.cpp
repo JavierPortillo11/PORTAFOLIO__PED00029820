@@ -8,23 +8,23 @@ int main(void)
 int n, i, numeros, suma=0, contador=0;
 float promedio;
 
-cout << "\nCuantos numeros quiere ingresar: "; cin >> n;
+    cout << "\nCuantos numeros quiere ingresar: "; cin >> n;
 
-cout << endl;
-for(i=0; i<n; i++){
-    cout << i+1 << ". Digite un numero: "; cin >> numeros;
-    suma+=numeros;
-    contador++;
-}
+    cout << endl;
+    for(i = 0; i < n; i++){
+        cout << i + 1 << ". Digite un numero: "; cin >> numeros;
+        suma+= numeros;
+        contador++;
+    }
 
-promedio= suma/contador;
+    promedio = suma / contador;
 
-ofstream archivo("texto.txt");
+    ofstream archivo("texto.txt");
 
-archivo << "Suma: " << suma << endl;
-archivo << "Promedio: " << promedio;
+    archivo << "Suma: " << suma << endl;
+    archivo << "Promedio: " << promedio;
 
-archivo.close();
+    archivo.close();
 
 cout << endl;
 return 0;

@@ -13,15 +13,13 @@ cout << "Digite un numero: "; cin >> num;
 sumar(num);
 
 cout << "\n\n";
-system("pause");
 return 0;
 }
 
-
 int sumar(int num){
     while (num>0){
-        suma+=num%10;
-        num/=10;
+        suma+= num % 10;
+        num/= 10;
     }
     cout << "La suma de los numeros es: " << suma;
     return suma;
