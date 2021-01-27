@@ -159,7 +159,7 @@ int main(void){
         cout << "\n1. Ingresar nuevo estudiante";
         cout << "\n2. Buscar por Carnet";
         cout << "\n3. Mostrar todos los estudiantes";
-        cout << "\n4. Mostrar los estudiantes que asistieron presencialmente";
+        cout << "\n4. Mostrar solo los estudiantes que asistieron presencialmente";
         cout << "\n0. Salir\n";
         cout << "Su opcion: "; cin >> opcion;
 
