@@ -2,9 +2,9 @@
 using namespace std;
 
 struct estudiantes{
-    string nombre;
+    string nombre, carnet;
     bool asistencia;
-    int carnet, horasSociales, nivelDeCarrera;
+    int horasSociales, nivelDeCarrera;
 };
 
 struct nodo {
@@ -33,7 +33,7 @@ class manejoEstudiantes{
         void pilaDatos();
         void pilaDatosIns();
         void colaDatosIns();
-        void busquedaCarnet(int carnet);
+        void busquedaCarnet(string carnet);
         void mostrarEstudiantesPila();
         void mostrarEstudiantesCola();
     };
@@ -86,7 +86,7 @@ void manejoEstudiantes::colaDatosIns(estudiantes es){
     }
 }
 
-void manejoEstudiantes::busquedaCarnet(int carnet){
+void manejoEstudiantes::busquedaCarnet(string carnet){
     bool encontrado = false;
 
     nodo *aux = pPila;
@@ -151,7 +151,8 @@ void manejoEstudiantes::mostrarEstudiantesCola(){
 
 int main(void){
     manejoEstudiantes es;
-    int opcion = 0, carnetBuscar = 0;
+    int opcion = 0;
+    string carnetBuscar;
 
     do {
         cout << "\n\tINGENIERIA INFORMATICA";
