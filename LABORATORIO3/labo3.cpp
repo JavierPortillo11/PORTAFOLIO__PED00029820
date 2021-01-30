@@ -103,23 +103,6 @@ void manejoEstudiantes::busquedaCarnet(int carnet){
         aux = aux->sig;
     }
 
-    if(encontrado)
-        return;
-
-    aux = pCola;
-
-    while(aux) {
-        if(aux->DatosEstudiantes.carnet == carnet){
-            cout << "Nombre: " << aux->DatosEstudiantes.nombre << endl; 
-            cout << "Nivel de carrera: " << aux->DatosEstudiantes.nivelDeCarrera << endl; 
-            cout << "Horas sociales: " << aux->DatosEstudiantes.horasSociales << endl; 
-
-            encontrado = true;
-            break;
-        }
-        aux = aux->sig;
-    }
-
     if(!encontrado)
         cout << "No se ha encontrado el estudiante" << endl;
 }
