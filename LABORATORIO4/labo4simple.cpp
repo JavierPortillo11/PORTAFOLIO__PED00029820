@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+ 
 struct nodo
 {
     int dato = 0;

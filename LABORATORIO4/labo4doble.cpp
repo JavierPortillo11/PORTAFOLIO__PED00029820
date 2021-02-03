@@ -5,7 +5,7 @@ struct nodo{
     int dato;
     nodo *ant, *sig;
 };
-
+ 
 class ListaDoble{
     private:
         nodo *pInicio;
